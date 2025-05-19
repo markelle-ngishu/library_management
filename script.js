@@ -1,6 +1,4 @@
-// ========================
 // Database Simulation
-// ========================
 
 // Initialize books and requests in localStorage if not exists
 function initializeBooks() {
@@ -37,9 +35,7 @@ function saveRequestsToStorage(requests) {
     localStorage.setItem('bookRequests', JSON.stringify(requests));
 }
 
-// ========================
 // Book Management Functions
-// ========================
 
 function addBook(title, author, isbn) {
     const books = getBooksFromStorage();
@@ -122,9 +118,7 @@ function requestBook(title, author) {
     return newRequest;
 }
 
-// ========================
 // UI Rendering Functions
-// ========================
 
 function loadLibrarianUI() {
     const userContent = document.getElementById('userContent');
@@ -371,9 +365,7 @@ function loadBookRequests() {
     });
 }
 
-// ========================
 // Event Listeners
-// ========================
 
 document.addEventListener('DOMContentLoaded', () => {
     initializeBooks();
